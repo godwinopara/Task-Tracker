@@ -17,6 +17,12 @@
       "text": "Food Shipping",
       "day": "May 7th at 12:30pm",
       "reminder": false
+    },
+    {
+      "text": "learn Angular",
+      "day": "Monday 16th 12am",
+      "reminder": true,
+      "id": 4
     }
   ]
 }
