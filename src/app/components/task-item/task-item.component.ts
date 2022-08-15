@@ -11,6 +11,7 @@ import { TaskService } from 'src/app/services/task.service';
 export class TaskItemComponent implements OnInit {
   @Input() task!: Task;
   @Output() onDeleteTask = new EventEmitter()
+  @Output() onToggleTask = new EventEmitter()
   faTimes = faTimes;
 
 
@@ -22,5 +23,9 @@ export class TaskItemComponent implements OnInit {
 
   onDelete(task:Task){
     this.onDeleteTask.emit(task)
+  }
+
+  onToggle(task:Task){
+    this.onToggleTask.emit(task)
   }
 }
